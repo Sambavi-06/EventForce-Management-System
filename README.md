@@ -40,7 +40,7 @@ The project includes the following objects:
 
 The ER diagram represents the objects and relationships used in the EventForce system.
 
-[View ER Diagram](EventForce_ER_Diagram.png.pn)
+[View ER Diagram](EventForce_ER_Diagram.png.png)
 
 ## Project Screenshots
 
