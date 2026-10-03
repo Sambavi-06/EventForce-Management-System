@@ -210,9 +210,9 @@ The documentation is maintained separately in the project repository.
 
 ## Demo Video
 
-A complete demonstration video has been prepared for the EventForce Management System.
+A complete demonstration of the EventForce Management System has been prepared.
 
-The demonstration covers:
+The demo covers:
 
 * Project Introduction
 * Event Planner Application
@@ -226,7 +226,9 @@ The demonstration covers:
 * Testing and Troubleshooting
 * Project Conclusion
 
-The demo video is available through the project resources.
+### Watch the Demo Video
+
+[EventForce Management System – Demo Video](https://drive.google.com/file/d/1GKlgDSovfcJopBSBtwON4Pxs49u_320G/view?usp=sharing)
 
 ---
 
