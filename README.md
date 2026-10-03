@@ -2,65 +2,47 @@
 
 ## Project Overview
 
-**EventForce Management System** is a Salesforce-based event management application developed to manage events, clients, vendors, venues, and feedback in a centralized platform.
+EventForce Management System is a Salesforce-based Event Management application developed to manage events, clients, vendors, venues, and feedback in a centralized platform.
 
-The project demonstrates the use of Salesforce CRM features such as custom objects, object relationships, Salesforce Flows, validation rules, approval processes, security configurations, reports, dashboards, and a Lightning application.
+The project demonstrates the use of Salesforce CRM features such as custom objects, relationships, automation, approval processes, security configurations, reports, dashboards, and a Lightning application.
 
 ---
 
 ## Objectives
 
-The main objectives of the EventForce Management System are:
-
-* Manage event information in a centralized Salesforce application.
+* Manage event information in a centralized system.
 * Maintain Client, Vendor, Venue, and Feedback records.
 * Establish relationships between different event management records.
 * Automate important business processes using Salesforce Flows.
 * Apply validation rules to maintain data quality.
-* Implement approval processes for required business operations.
-* Configure Salesforce security using profiles and permission sets.
-* Generate reports for event-related analysis.
-* Create dashboards for monitoring and decision-making.
+* Implement approval processes for required workflows.
+* Configure security using Salesforce profiles and permission sets.
+* Generate reports for monitoring event-related information.
+* Create dashboards for visualizing important information.
 * Provide a user-friendly Lightning application for event management.
 
 ---
 
 ## Salesforce Objects
 
-The project uses the following custom objects:
+The EventForce Management System contains the following objects:
 
-| Object           | Purpose                                                                         |
-| ---------------- | ------------------------------------------------------------------------------- |
-| **Event**        | Stores event details such as event name, date, status, and related information. |
-| **Client**       | Maintains information about clients associated with events.                     |
-| **Vendor**       | Stores vendor information used for event services.                              |
-| **Venue**        | Maintains venue details for events.                                             |
-| **Feedback**     | Stores feedback related to completed events.                                    |
-| **Event Vendor** | Junction object used to associate events with vendors.                          |
+* Event
+* Client
+* Vendor
+* Venue
+* Feedback
+* Event Vendor
 
----
-
-## Data Model
-
-The EventForce data model establishes relationships between the major Salesforce objects.
-
-The **Event** object acts as the central object and is connected with related Client, Venue, Vendor/Event Vendor, and Feedback information.
-
-The **Event Vendor** junction object helps manage the relationship between Events and Vendors.
-
-### ER Diagram
-
-[View ER Diagram](ER_Diagram.png)
+The Event Vendor object is used as a junction object to associate Events and Vendors.
 
 ---
 
-## Salesforce Application
+## Application
 
-The project includes a Lightning application named:
+The project includes a Salesforce Lightning application named **Event Planner**.
 
-### Event Planner
-
-The application provides navigation to the major components of the EventForce system, including:
+The application provides access to:
 
 * Events
 * Clients
@@ -74,164 +56,119 @@ The application provides navigation to the major components of the EventForce sy
 
 ## Key Features
 
-### 1. Custom Objects
+### Custom Objects
 
-Custom Salesforce objects were created to represent the different entities involved in event management.
+Custom objects were created to represent the major entities involved in event management.
 
-### 2. Object Relationships
+### Object Relationships
 
-Relationships were established between the objects to connect event information with clients, venues, vendors, and feedback.
+Relationships were established between the objects to connect events with clients, venues, vendors, and feedback.
 
-### 3. Salesforce Flows
+### Salesforce Flows
 
-Salesforce Flow is used to automate required business processes and reduce manual work.
+Salesforce Flows are used to automate required business processes and reduce manual operations.
 
-### 4. Validation Rules
+### Validation Rules
 
-Validation rules help prevent incorrect or incomplete data from being entered into the system.
+Validation rules are used to maintain data accuracy and prevent invalid records from being submitted.
 
-### 5. Approval Process
+### Approval Process
 
-An approval process is configured for the required event management workflow.
+An approval process is configured to support the required event management approval workflow.
 
-### 6. Security Configuration
+### Security
 
-Salesforce security features such as profiles and permission sets are used to control access to application data and functionality.
+Salesforce security features such as profiles and permission sets are used to manage access to the application and its data.
 
-### 7. Reports
+### Reports
 
-Reports provide organized information about event-related records and help users monitor the system.
+Reports are created to organize and analyze event management information.
 
-### 8. Dashboards
+### Dashboards
 
-The project includes dashboards for visual monitoring of event management information.
-
-### 9. Lightning Application
-
-The **Event Planner** Lightning application provides a centralized interface for accessing the EventForce components.
+Dashboards provide a visual representation of important event-related information.
 
 ---
 
-# Project Screenshots
+## Data Model
 
-## App Overview
+The EventForce data model represents the relationships between the major Salesforce objects.
 
-The Event Planner application provides access to the main EventForce objects and reporting components.
+The Event object is the central component of the system and is connected with related Client, Venue, Vendor/Event Vendor, and Feedback information.
 
-[View App Overview](EventForceScreenshorts/Overview.png)
-
----
-
-## Event Record
-
-The Event record page displays event-related information stored in Salesforce.
-
-[View Event Record](EventForceScreenshorts/Event_Record.png)
+The ER diagram is included in the project repository for reference.
 
 ---
 
-## Salesforce Flow
+## Automation
 
-The Flow demonstrates the automation configured for the EventForce application.
+The project uses Salesforce automation to reduce manual work and support business processes.
 
-[View Flow](EventForceScreenshorts/Flow.png)
+The implemented automation components include:
 
----
+* Salesforce Flows
+* Validation Rules
+* Approval Process
 
-## Approval Process
-
-The Approval Process demonstrates the configured approval workflow in Salesforce.
-
-[View Approval Process](EventForceScreenshorts/Approval.process.png)
+These components help maintain data consistency and automate required operations.
 
 ---
 
-## Reports
+## Security
 
-Reports are used to organize and analyze event management data.
+Security configurations are implemented using Salesforce access-control features.
 
-[View Reports](EventForceScreenshorts/Reports.png)
+The project includes:
 
----
+* Profiles
+* Permission Sets
+* Object-level access
+* Record-level access where configured
 
-## Dashboard
-
-The dashboard provides a visual representation of important event management information.
-
-[View Dashboard](EventForceScreenshorts/Dashboard.png)
-
----
-
-# Project Documentation
-
-Detailed project documentation covers:
-
-* Business Overview and Objectives
-* Phase-wise Implementation
-* Salesforce Data Model
-* ER Diagram
-* Automation Components
-* Security Model
-* Testing Results
-* Screenshots
-* Deployment
-* Maintenance and Troubleshooting
-
-**Documentation PDF will be added to this repository.**
+These configurations help control which users can access and modify application data.
 
 ---
 
-# Demo Video
+## Reports and Dashboards
 
-A complete demonstration of the EventForce Management System has been recorded.
+The project includes Salesforce reports and dashboards for monitoring event management information.
 
-The demo covers the application interface, Salesforce components, automation, approval process, reports, dashboard, and other implemented features.
-
-### Watch the Demo
-
-[Watch EventForce Demo Video](https://drive.google.com/file/d/1GKlgDSovfcJopBSBtwON4Pxs49u_320G/view?usp=sharing)
-
-> Make sure the Google Drive sharing permission is set to **Anyone with the link – Viewer** so that others can access the video.
+Reports help users view organized event data, while dashboards provide a visual overview of important information.
 
 ---
 
-# Deployment
+## Testing
 
-The project was developed and tested using a **Salesforce Developer Edition** environment.
-
-Deployment activities were considered as part of the project implementation, including:
-
-* Metadata readiness
-* Configuration review
-* Validation of Salesforce components
-* Testing before deployment
-* Version control using GitHub
-
-The deployment approach is demonstrated as a simulated deployment suitable for the Developer Edition environment.
-
----
-
-# Testing
-
-The EventForce system was tested to verify the functionality of its major components.
+The application was tested to verify the functionality of its major components.
 
 Testing included:
 
-* Creating and updating Event records
+* Creating Event records
+* Updating Event records
 * Checking object relationships
 * Testing Flow automation
 * Testing validation rules
 * Testing approval processes
-* Verifying user access and permissions
+* Verifying permissions
 * Checking reports
-* Checking dashboard information
-* Verifying the Lightning application navigation
+* Checking dashboards
+* Verifying Lightning application navigation
 
 ---
 
-# Maintenance and Troubleshooting
+## Deployment
 
-The system can be maintained by regularly monitoring:
+The project was developed and tested using a Salesforce Developer Edition environment.
+
+Deployment readiness was considered by reviewing the configured Salesforce components, testing the application, and maintaining project resources using GitHub.
+
+The deployment process is demonstrated as a simulated deployment suitable for the Developer Edition environment.
+
+---
+
+## Maintenance and Troubleshooting
+
+The application can be maintained by regularly monitoring:
 
 * Salesforce Flows
 * Approval Processes
@@ -243,79 +180,105 @@ The system can be maintained by regularly monitoring:
 
 Common troubleshooting areas include:
 
-* Permission conflicts
+* Permission issues
 * Flow execution issues
-* Validation rule errors
+* Validation errors
 * Record access problems
-* Incorrect report results
+* Report configuration issues
 * Dashboard configuration issues
 
 ---
 
-# Technologies Used
+## Project Documentation
 
-* **Salesforce Developer Edition**
-* **Salesforce Lightning Platform**
-* **Custom Salesforce Objects**
-* **Salesforce Flows**
-* **Validation Rules**
-* **Approval Processes**
-* **Profiles and Permission Sets**
-* **Salesforce Reports**
-* **Salesforce Dashboards**
-* **GitHub**
+The project documentation contains information about:
 
----
+* Business Overview and Objectives
+* Phase-wise Implementation
+* Data Model
+* ER Diagram
+* Automation Components
+* Security Model
+* Testing Results
+* Screenshots
+* Deployment
+* Maintenance and Troubleshooting
 
-# Project Structure
-
-```text
-EventForce-Management-System
-│
-├── ER_Diagram.png
-│
-├── EventForceScreenshorts
-│   ├── Approval.process.png
-│   ├── Dashboard.png
-│   ├── Event_Record.png
-│   ├── Flow.png
-│   ├── Overview.png
-│   └── Reports.png
-│
-└── README.md
-```
+The documentation is maintained separately in the project repository.
 
 ---
 
-# Learning Outcomes
+## Demo Video
 
-Through this project, the following Salesforce concepts were practiced:
+A complete demonstration video has been prepared for the EventForce Management System.
+
+The demonstration covers:
+
+* Project Introduction
+* Event Planner Application
+* User Interface
+* Salesforce Objects
+* Automation
+* Approval Process
+* Security Configuration
+* Reports
+* Dashboard
+* Testing and Troubleshooting
+* Project Conclusion
+
+The demo video is available through the project resources.
+
+---
+
+## Technologies Used
+
+* Salesforce Developer Edition
+* Salesforce Lightning Platform
+* Salesforce Custom Objects
+* Salesforce Flows
+* Validation Rules
+* Approval Processes
+* Profiles and Permission Sets
+* Salesforce Reports
+* Salesforce Dashboards
+* GitHub
+
+---
+
+## Learning Outcomes
+
+Through this project, the following concepts were practiced:
 
 * Salesforce Custom Objects
 * Object Relationships
-* Salesforce Lightning App Development
+* Lightning Applications
 * Salesforce Flow Automation
 * Validation Rules
 * Approval Processes
 * Profiles and Permission Sets
 * Reports and Dashboards
 * Data Management
-* Testing and Troubleshooting
+* Testing
+* Troubleshooting
 * Project Documentation
-* GitHub Version Control
+* GitHub Repository Management
 
 ---
 
-# Project Status
+## Project Status
 
-**Status: Completed**
+**Completed**
 
-The EventForce Management System has been implemented in Salesforce with the required objects, relationships, automation, approval process, security configuration, reports, dashboard, screenshots, and project demonstration.
+The EventForce Management System has been implemented and tested as a Salesforce-based event management application.
+
+The repository contains the project resources, screenshots, ER diagram, documentation, and demonstration details.
 
 ---
 
-# Repository
+## Author
 
-This repository contains the project-related documentation, ER diagram, screenshots, and supporting resources for the **EventForce Management System**.
+**Sambavi Arjunan**
 
-**Developed as a Salesforce academic project.**
+B.E. Computer Science and Engineering
+
+Government College of Engineering, Erode
